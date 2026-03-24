@@ -1,0 +1,16 @@
+
+CREATE TABLE clients (
+    id SERIAL PRIMARY KEY,
+    first_name VARCHAR(50),
+    last_name VARCHAR(50),
+    birth_year INT,
+    balance INT -- добавили баланс для задания с транзакцией
+);
+
+CREATE TABLE subscriptions (
+    id SERIAL PRIMARY KEY,
+    client_id INT, 
+    sub_type VARCHAR(20),
+    reg_date DATE,
+    exp_date DATE
+);
