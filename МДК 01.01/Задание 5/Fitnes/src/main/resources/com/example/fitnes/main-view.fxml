@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.collections.FXCollections?>
+<?import java.lang.String?>
+
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.fitnes.HelloController">
+    <padding><Insets top="15" right="15" bottom="15" left="15"/></padding>
+
+    <HBox fx:id="loginPane" spacing="10" alignment="CENTER">
+        <TextField fx:id="loginField" promptText="Логин"/>
+        <PasswordField fx:id="passwordField" promptText="Пароль"/>
+        <Button text="Войти" onAction="#handleLogin"/>
+    </HBox>
+
+    <Label fx:id="statusLabel" text="Вход в систему" style="-fx-font-weight: bold;"/>
+
+    <TabPane fx:id="mainTabPane" visible="false" managed="false" VBox.vgrow="ALWAYS">
+
+        <Tab text="Управление пользователями" fx:id="adminTab">
+            <VBox spacing="10">
+                <Label text="Регистрация (Сотрудник или Клиент)" style="-fx-font-weight: bold;"/>
+                <GridPane hgap="10" vgap="5">
+                    <TextField fx:id="fNameF" promptText="Имя" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                    <TextField fx:id="lNameF" promptText="Фамилия" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+                    <TextField fx:id="yearF" promptText="Год рождения (только для кл.)" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                    <TextField fx:id="contactF" promptText="Контакты" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+
+                    <ComboBox fx:id="genderBox" promptText="Пол" GridPane.rowIndex="2" GridPane.columnIndex="0">
+                        <items><FXCollections fx:factory="observableArrayList">
+                            <String fx:value="MALE"/><String fx:value="FEMALE"/>
+                        </FXCollections></items>
+                    </ComboBox>
+
+                    <ComboBox fx:id="roleBox" promptText="Роль" GridPane.rowIndex="2" GridPane.columnIndex="1">
+                        <items><FXCollections fx:factory="observableArrayList">
+                            <String fx:value="ADMIN"/><String fx:value="TRAINER"/><String fx:value="CLIENT"/>
+                        </FXCollections></items>
+                    </ComboBox>
+
+                    <TextField fx:id="regLoginF" promptText="Логин" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                    <TextField fx:id="regPassF" promptText="Пароль" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+                </GridPane>
+                <Button text="Зарегистрировать в базе" onAction="#handleRegisterAnyUser" maxWidth="Infinity"/>
+                <Separator/>
+                <Button text="Обновить список всех" onAction="#refreshUserLists"/>
+                <TextArea fx:id="allUsersArea" prefHeight="150" editable="false" style="-fx-font-family: 'Monospaced';"/>
+                <Button text="Отчет по посещаемости" onAction="#handleShowAttendanceReport"/>
+                <TextArea fx:id="reportArea" prefHeight="100" editable="false"/>
+            </VBox>
+        </Tab>
+
+        <Tab text="Работа тренера" fx:id="trainerTab">
+            <VBox spacing="10">
+                <Label text="Назначение тренировки" style="-fx-font-weight: bold;"/>
+                <HBox spacing="5">
+                    <TextField fx:id="targetClientId" promptText="ID Кл." prefWidth="50"/>
+                    <TextField fx:id="exName" promptText="Упражнение"/>
+                    <TextField fx:id="exSets" promptText="Подх." prefWidth="50"/>
+                    <TextField fx:id="exReps" promptText="Повт." prefWidth="50"/>
+                    <Button text="В план" onAction="#handleAddTrainingPlan"/>
+                </HBox>
+                <HBox spacing="5">
+                    <DatePicker fx:id="schedDate" prefWidth="120"/>
+                    <TextField fx:id="schedTime" promptText="14:00" prefWidth="60"/>
+                    <Button text="В расписание" onAction="#handleAddSchedule"/>
+                </HBox>
+                <Label text="Список клиентов для работы:"/>
+                <TextArea fx:id="trainerClientsArea" prefHeight="200" editable="false" style="-fx-font-family: 'Monospaced';"/>
+            </VBox>
+        </Tab>
+
+        <Tab text="Мой профиль" fx:id="clientTab">
+            <VBox spacing="10">
+                <Label fx:id="clientWelcome" text="Добро пожаловать!" style="-fx-font-size: 16;"/>
+                <TitledPane text="Мой тренировочный план">
+                    <TextArea fx:id="clientPlanArea" prefHeight="150" editable="false"/>
+                </TitledPane>
+                <TitledPane text="Мое расписание">
+                    <TextArea fx:id="clientSchedArea" prefHeight="100" editable="false"/>
+                </TitledPane>
+                <Button text="Обновить данные" onAction="#refreshClientView" maxWidth="Infinity"/>
+            </VBox>
+        </Tab>
+    </TabPane>
+</VBox>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1028f202-d293-41fa-91d5-78ddf0c7732b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../МДК 01.01/Задание 5/Fitnes/src/main/java/com/example/fitnes/HelloApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../МДК 01.01/Задание 5/Fitnes/src/main/java/fitnesDB/DataBase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../МДК 01.01/Задание 5/Fitnes/src/main/java/fitnesDB/Fitness.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../МДК 01.01/Задание 5/Fitnes/src/main/java/fitnesDB/Subscription.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../МДК 01.01/Задание 5/Fitnes/src/main/java/fitnesDB/enums/FitnessZone.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../МДК 01.01/Задание 5/Fitnes/src/main/java/fitnesDB/enums/Gender.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../МДК 01.01/Задание 5/Fitnes/src/main/java/fitnesDB/enums/TypeSubscription.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../МДК 01.01/Задание 5/Fitnes/src/main/resources/com/example/fitnes/main-view.fxml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3,
+  "fromUser": false
+}]]></component>
+  <component name="ProjectId" id="3BtdClV0iCLEw4IpAJSXtW63TLt" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/maman/Desktop/Новая папка (3)/shestakov331/МДК 01.02/Задание 2. Try Catch/TryCatch",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-30f59d01ecdd-2fc7cc6b9a17-intellij.indexing.shared.core-IU-253.32098.37" />
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-IU-253.32098.37" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1028f202-d293-41fa-91d5-78ddf0c7732b" name="Changes" comment="" />
+      <created>1775312174126</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1775312174126</updated>
+      <workItem from="1775312175174" duration="38000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
